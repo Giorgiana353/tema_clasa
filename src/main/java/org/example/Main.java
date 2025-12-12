@@ -4,16 +4,16 @@ public class Main {
     public static void main(String[] args) {
         Stock amz = new AmazonStock("$", 1000);
 
-        PrivateInvestor john = new PrivateInvestor("John Doe", amz);
+        PrivateInvestor Giorgi = new PrivateInvestor("Giorgi", amz);
 
         PublicInvestor voo = new PublicInvestor("VOO");
 
-        amz.subscribe(john); // pull
+        amz.subscribe(Giorgi); // pull
         amz.subscribe(voo);  // push
 
-        amz.setPrice(1001);
+        amz.setPrice(201);
         amz.setCurrency("USD");
-        amz.unsubscribe(john);
-        amz.setPrice(1002);
+        amz.unsubscribe(Giorgi);
+        amz.setPrice(100);
     }
 }

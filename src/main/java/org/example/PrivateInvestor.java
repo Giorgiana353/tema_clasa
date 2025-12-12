@@ -2,7 +2,7 @@ package org.example;
 
 public class PrivateInvestor implements StockObserver {
     private final String investorName;
-    private final Stock stock; // pentru PULL
+    private final Stock stock; 
 
     public PrivateInvestor(String investorName, Stock stock) {
         this.investorName = investorName;
@@ -11,6 +11,6 @@ public class PrivateInvestor implements StockObserver {
 
     @Override
     public void update() {
-        System.out.println(investorName + " notified (PULL). Current quote: " + stock.quote());
+        System.out.println(investorName + " notified. Current quote: " + stock.quote());
     }
 }
