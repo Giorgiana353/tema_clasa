@@ -12,7 +12,7 @@ public class Main {
         amz.subscribe(voo);  // push
 
         amz.setPrice(201);
-        amz.setCurrency("USD");
+        amz.setCurrency("Euro");
         amz.unsubscribe(Giorgi);
         amz.setPrice(100);
     }
